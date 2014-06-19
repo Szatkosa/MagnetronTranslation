@@ -7,7 +7,7 @@ public class Main {
 		double r = 5;
 		double height = 2;
 		double inc = 3;
-		Circle c = new Circle(r, height, inc)
+		Circle c = new Circle(r, height, inc);
 	}
 
 }
