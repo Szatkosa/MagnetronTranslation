@@ -1,5 +1,7 @@
 package pkg;
 
+//Hi!
+
 public class ElectricField {
 
 	private static final double DEFAULT_Z = 0;
