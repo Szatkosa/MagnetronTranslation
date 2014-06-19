@@ -5,7 +5,7 @@ public class Circle {
 	 * Circle tool
 	 */
 	private double rad, inc, height;
-	
+
 	public Circle(double r, double height, double inc) {
 		// TODO Auto-generated constructor stub
 		this.setRad(r);
@@ -21,7 +21,8 @@ public class Circle {
 	}
 
 	/**
-	 * @param rad the rad to set
+	 * @param rad
+	 *            the rad to set
 	 */
 	public void setRad(double rad) {
 		this.rad = rad;
@@ -35,7 +36,8 @@ public class Circle {
 	}
 
 	/**
-	 * @param inc the inc to set
+	 * @param inc
+	 *            the inc to set
 	 */
 	public void setInc(double inc) {
 		this.inc = inc;
@@ -49,8 +51,10 @@ public class Circle {
 	}
 
 	/**
-	 * @param height the height to set
+	 * @param height
+	 *            the height to set
 	 */
 	public void setHeight(double height) {
 		this.height = height;
-	}}
+	}
+}
