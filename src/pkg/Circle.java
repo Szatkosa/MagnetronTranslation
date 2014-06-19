@@ -1,7 +1,9 @@
 package pkg;
 
-//america! wowyeah
 public class Circle {
+	/*
+	 * Circle tool
+	 */
 	private double rad, inc, height;
 	
 	public Circle(double r, double height, double inc) {
