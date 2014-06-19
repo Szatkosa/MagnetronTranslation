@@ -5,7 +5,6 @@ public class Electron {
 	private static final double[] DEFAULT_VELOCITY = { 0, 0, 0 };
 	private static final double ELECTRON_MASS = 9.10938E-31;
 	private static final double ENERGY_LOSS = 1.859E-19;
-	@SuppressWarnings("unused")
 	private static int AVG_NUM_COLLISIONS = 18;
 	private static double COLLISION_PROBABILITY = 1E-4;
 
@@ -28,10 +27,9 @@ public class Electron {
 	}
 
 	public Electron(double[] bounds2) {
-		// TODO Auto-generated constructor stub
+		// DONE Auto-generated constructor stub
 		this.setPos(DEFALUT_POS);
 		this.setVelocity(DEFAULT_VELOCITY);
-		double d = 5;
 	}
 
 	/*
