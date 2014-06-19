@@ -1,9 +1,10 @@
 package pkg;
 
 public class Electron {
+	public static final double ELECTRON_STARTING_HEIGHT = 0.03;
+	public static final double ELECTRON_MASS = 9.10938E-31;
 	private static final double[] DEFALUT_POS = { 0, 0, 0 };
 	private static final double[] DEFAULT_VELOCITY = { 0, 0, 0 };
-	private static final double ELECTRON_MASS = 9.10938E-31;
 	private static final double ENERGY_LOSS = 1.859E-19;
 	private static int AVG_NUM_COLLISIONS = 18;
 	private static double COLLISION_PROBABILITY = 1E-4;
