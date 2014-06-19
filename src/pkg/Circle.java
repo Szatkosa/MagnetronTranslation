@@ -50,5 +50,4 @@ public class Circle {
 	 */
 	public void setHeight(double height) {
 		this.height = height;
-	}
-}
+	}}
