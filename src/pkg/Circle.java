@@ -1,5 +1,7 @@
 package pkg;
 
+//Hello!
+
 public class Circle {
 	private double rad, inc, height;
 	
