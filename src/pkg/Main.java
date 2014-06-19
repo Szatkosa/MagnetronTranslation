@@ -18,13 +18,13 @@ public class Main {
 		double time = 0;
 		double v = 0;
 		double[] pos = new double[3], velocity = new double[3];
-		vp = equationOfMotionPICManyElectrons(electronDensity, false, E0, Br, Bz, stepR, stepZ,
-				time, pos, velocity);
+		vp = equationOfMotionPICManyElectrons(electronDensity, false, E0, Br,
+				Bz, stepR, stepZ, time, pos, velocity);
 	}
 
 	private static double[] equationOfMotionPICManyElectrons(
-			double electronDensity, boolean wave, double e0, double br, double bz,
-			double stepR, double stepZ, double time, double[] pos,
+			double electronDensity, boolean wave, double e0, double br,
+			double bz, double stepR, double stepZ, double time, double[] pos,
 			double[] velocity) {
 		// TODO Auto-generated method stub
 		final double K = -1.75881E11;
@@ -88,7 +88,7 @@ public class Main {
 
 	private static int gridPos(double value, double step, double maxSize) {
 		// TODO Auto-generated method stub
-		int pos = (int) Math.floor(value/step);
+		int pos = (int) Math.floor(value / step);
 		if (pos <= 0 || pos > maxSize)
 			pos = 1;
 		return pos;
@@ -99,9 +99,22 @@ public class Main {
 	}
 
 	private static void createOrderedElectronDensity(double N, double[] bounds) {
+		Main.electrons.clear();
 		for (int i = 0; i < N; i++) {
 			for (int k = 0; k < N; k++) {
 				double R = bounds[0] / (N + 1);
+				double[] pos = { R, 0, Electron.ELECTRON_STARTING_HEIGHT };
+				double[] velocity = { 0, 0, 0 };
+				Main.electrons.add(new Electron(pos, velocity, bounds));
+			}
+		}
+	}
+
+	private static void createElectronDensity(double N, double[] bounds) {
+		Main.electrons.clear();
+		for (int i = 0; i < N; i++) {
+			for (int k = 0; k < N; k++) {
+				double R = bounds[0] * Math.random();
 				double[] pos = { R, 0, Electron.ELECTRON_STARTING_HEIGHT };
 				double[] velocity = { 0, 0, 0 };
 				Main.electrons.add(new Electron(pos, velocity, bounds));
