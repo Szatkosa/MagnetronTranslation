@@ -86,6 +86,14 @@ public class Main {
 		return vp;
 	}
 
+	private static double gridPos(double value, double step, double maxSize) {
+		// TODO Auto-generated method stub
+		double pos = Math.floor(value/step);
+		if (pos <= 0 || pos > maxSize)
+			pos = 1;
+		return pos;
+	}
+
 	private static void convertTrajectoriestoDensity(int t) {
 		// TODO Complete Later
 	}
