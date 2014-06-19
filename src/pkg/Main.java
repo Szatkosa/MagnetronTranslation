@@ -10,8 +10,8 @@ public class Main {
 		Circle c = new Circle(r, height, inc);
 		int t = 3;
 		convertTrajectoriestoDensity(t);
-		int[] bounds = { 15, 15, 15 };
-		int[] v = { 0, 0, 0, 0, 0, 0 };
+		double[] bounds = { 15, 15, 15 };
+		double[] v = { 0, 0, 0, 0, 0, 0 };
 		Electron e = new Electron(bounds);
 	}
 
