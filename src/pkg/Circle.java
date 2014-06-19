@@ -1,6 +1,6 @@
 package pkg;
 
-//america!
+//america! wowyeah
 public class Circle {
 	private double rad, inc, height;
 	
