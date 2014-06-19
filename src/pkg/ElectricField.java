@@ -36,7 +36,7 @@ public class ElectricField {
 				DEFAULT_BMAG, DEFAULT_NE);
 	}
 
-	public void recalculate(double z, double time, double e0, boolean wave,
+	public double recalculate(double z, double time, double e0, boolean wave,
 			double bmag, double ne) {
 		// TODO Auto-generated method stub
 		this.z = z;
@@ -45,7 +45,7 @@ public class ElectricField {
 		this.wave = wave;
 		this.bmag = bmag;
 		this.ne = ne;
-		this.recalculate();
+		return this.recalculate();
 	}
 
 	public double recalculate() {
