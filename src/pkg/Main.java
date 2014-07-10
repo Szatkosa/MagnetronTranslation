@@ -17,6 +17,7 @@ public class Main {
 		double stepZ = 0;
 		double time = 0;
 		double v = 0;
+		ExcelHandler eh = new ExcelHandler("C:/users/szatkosa/desktop/excelSheet");
 		double[] pos = new double[3], velocity = new double[3];
 		vp = equationOfMotionPICManyElectrons(electronDensity, false, E0, Br,
 				Bz, stepR, stepZ, time, pos, velocity);
